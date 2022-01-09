@@ -1,5 +1,4 @@
 import json
-import pandas as pd
 
 
 def delete_offers_without_salary():
@@ -12,10 +11,15 @@ def delete_offers_without_salary():
 
 
 def prepare_data():
+    print('Data preparation')
     # delete_offers_without_salary()
-    df = pd.read_csv('data/formatted_data.csv')
+    # next json data was flattened with js scripts from flatten_json.js -> result in formatted.json
+    # next I converted json to csv
 
-    print(df.columns)
+
+
+
+
 
 
 
